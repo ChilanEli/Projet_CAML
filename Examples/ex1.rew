@@ -1,0 +1,7 @@
+rules
+  r1: f X X -> X;
+  r2: a -> b;
+
+trace r1, r2;
+
+simp [left_outer]   f (f a a) a
